@@ -1,0 +1,12 @@
+apple
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+grape * 9,75,67,92,70,51,60,34,87,79,88,52,73,27,13,33,14,35,71,38,96,32,88,14,24,88,94,42,27,86,78,95,83,53,53,63,9,42,28,24,38,0
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+false - 49,75,33,20,93,31,18,41,21,85,29,34,56,78,63,11,2,96,75,32,84,5,33,95,76,64,96,82,55,22,86,41,57,45,63,13,71,64,93,59,96,50,34,61,71,23,72,64
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
