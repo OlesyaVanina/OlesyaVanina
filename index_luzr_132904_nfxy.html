@@ -1,0 +1,17 @@
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+18,36,71,95,21,39,75,1,28,18,0,70,69,14,3,1,9,41,55 * banana
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+apple
+
+
+const capitalizeString = str => str.toUpperCase();
+grape * false
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
